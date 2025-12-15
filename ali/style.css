@@ -1,0 +1,44 @@
+/* Basic styles for Ali's first website */
+:root{ --accent:#ff6b8a; --bg:#fff; --text:#111; }
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Segoe UI, system-ui, Arial, sans-serif;background:linear-gradient(180deg,#fff 0%,#fff);color:var(--text);line-height:1.5}
+.container{max-width:900px;margin:2rem auto;padding:1rem}
+.site-header{background:var(--accent);padding:.75rem 0}
+.nav{list-style:none;display:flex;gap:1rem;justify-content:center}
+.nav a{color:#fff;text-decoration:none;font-weight:600}
+h1{font-size:2rem;margin-bottom:.25rem;text-align:center}
+h2{font-size:1.25rem;margin-bottom:1rem;text-align:center;color:#333}
+.lead{background:#fff3f5;padding:1rem;border-radius:8px;margin:1rem 0}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.5rem 1rem;border-radius:6px;text-decoration:none}
+.site-footer{text-align:center;padding:1rem;margin-top:2rem;color:#666;border-top:1px solid #eee}
+@media(min-width:700px){h1{font-size:2.5rem}}
+
+/* Social links */
+.socials{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-bottom:.5rem}
+.socials a{display:inline-block;padding:.45rem .6rem;border-radius:6px;background:#fff;color:var(--text);text-decoration:none;border:1px solid #eee;font-weight:600}
+.socials a:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* Apps grid */
+.apps-section{margin-top:1.5rem}
+.apps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:.6rem;margin-top:.5rem}
+.app{display:flex;align-items:center;gap:.6rem;padding:.6rem;border-radius:8px;background:#fff;border:1px solid #eee;text-decoration:none;color:var(--text);font-weight:600}
+.app .icon{width:36px;height:36px;border-radius:8px;display:inline-grid;place-items:center;background:#f5f5f7;border-radius:6px;font-weight:700}
+.app .label{font-size:.95rem}
+.app:hover{background:var(--accent);color:#fff}
+.app:hover .icon{background:rgba(255,255,255,0.2)}
+.app .icon.g{color:#4285F4}
+.app .icon.gm{color:#EA4335}
+.app .icon.yt{color:#FF0000}
+.app .icon.mp{color:#34A853}
+.app .icon.dr{color:#0F9D58}
+.app .icon.pl{color:#0F9D58}
+.app .icon.ph{color:#FBBC05}
+.app .icon.nw{color:#DB4437}
+.app .icon.tr{color:#4285F4}
+.app .icon.cal{color:#4285F4}
+.app .icon.fb{color:#1877F2}
+.app .icon.ig{color:#E4405F}
+.app .icon.wa{color:#25D366}
+.app .icon.tt{color:#000}
+.app .icon.ms{color:#0084FF}
+.app .icon.fv{color:#1dbf73}
